@@ -1,0 +1,31 @@
+{
+  "name": "hangmannode",
+  "version": "1.0.0",
+  "description": "A Node.js Command line Hangman App that uses the Movie DB API to gather Actor names via user input then uses the name to create a Hangman game via the command line",
+  "main": "main.js",
+  "dependencies": {
+    "inquirer": "^1.2.3",
+    "moviedb": "^0.2.7",
+    "request": "^2.79.0",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramirolpz55/Week11-Hangman.git"
+  },
+  "keywords": [
+    "hangman",
+    "node",
+    "game"
+  ],
+  "author": "Ramiro Lopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramirolpz55/Week11-Hangman/issues"
+  },
+  "homepage": "https://github.com/ramirolpz55/Week11-Hangman#readme"
+}

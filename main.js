@@ -28,7 +28,7 @@ function userGuess() {
             }
         }
     }]).then(function(user) {
-        console.log("+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+");
+        console.log("================================================================");
         var letter = user.letter;
         newWord.checkLetter(letter);
         if (newWord.isLetterValid) {
@@ -36,14 +36,14 @@ function userGuess() {
             userGuess();
         } else {
             if (newWord.isComplete()) {
-                console.log("CORRECTOMUNDOOOO! YOU WIN!!!!!!!!!! " + newWord.chosenWord + " was the hidden word!");
+                console.log("CORRECT! YOU WIN!!!!!!!!!! " + newWord.chosenWord + " was the hidden word!");
                 playAgain();
             } else if (newWord.trysLeft === 0) {
                 console.log("Sorry but you are all out of trys! The answer was " + " ' " + newWord.chosenWord + " ' ");
                 playAgain();
             } else {
                 console.log("You have " + newWord.trysLeft + " remaining trys left!");
-                console.log("------------------------------------------------------");
+                console.log(".................................................................");
                 userGuess();
             }
         }
@@ -64,7 +64,7 @@ function playAgain() {
                 userGuess();
             });
         } else if (answer === 'n') {
-            console.log("Thank you for playing! i knew you would not last let alone guess a single word!");
+            console.log("Thank you for playing! I knew you would not last let alone guess a single word!");
             return;
         }
     })

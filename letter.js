@@ -3,7 +3,7 @@
 
 //console.log("RAMIRO THIS IS LETTER");
 
-//THIS IS A PROTOYPE WHICH PRINTS THE LETTER IF IT IS CORRECTLY GUESSED IF NOT IT WILL HAVE A * 
+//THIS IS A PROTOYPE WHICH PRINTS THE LETTER IF IT IS CORRECTLY GUESSED IF NOT IT WILL HAVE A -
 Letter.prototype.printLetra = function() {
     if (this.show) {
         return this.letter;
